@@ -1005,6 +1005,9 @@ app.get("/", (req, res) => {
   res.send(html);
 });
 
+app.use((req, res) => {
+  res.status(404).send('Currently not found...try again later');
+});
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server listening on port ${PORT}`);
 });
