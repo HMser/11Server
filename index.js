@@ -24,7 +24,7 @@ app.set('view engine', 'ejs');
 app.set('public', path.join(__dirname, 'public'));
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'HMsurya.html'));
+  res.sendFile(path.join(__dirname, 'public', 'ch.html'));
 });
 app.use((req, res) => {
   res.status(404).send('Currently not found...try again later');
